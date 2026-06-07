@@ -29,46 +29,44 @@ export default function HowItWorks() {
             What Investors Actually Own
           </p>
 
-          <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
-            <h3 className="text-xl font-semibold text-[#1B4F72] mb-4">
+          <div className="bg-[#F7F9FA] rounded-lg p-10">
+            <h2 className="text-3xl font-semibold text-[#2C3E50] mb-6">
               Financial Units, Not Physical Property
-            </h3>
-            <div className="space-y-4 text-gray-600">
-              <p>
-                When you invest through Structura, you purchase financial units
-                that represent a percentage ownership of the property's value.
-                You do not own a physical piece of the property itself.
-              </p>
-              <p>
-                This structure provides several advantages: simplified legal
-                ownership, no physical maintenance responsibilities, and the
-                ability to own fractional interests in multiple properties.
-              </p>
-            </div>
+            </h2>
+            <p className="text-[#5D6D7E] leading-relaxed text-lg mb-4">
+              When you invest through Structura, you purchase financial units
+              that represent a percentage ownership of the property's value. You
+              do not own a physical piece of the property itself.
+            </p>
+            <p className="text-[#5D6D7E] leading-relaxed text-lg">
+              This structure provides several advantages: simplified legal
+              ownership, no physical maintenance responsibilities, and the
+              ability to own fractional interests in multiple properties.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
-              <div className="h-10 w-10 rounded-full bg-[#D1EAEF] flex items-center justify-center mb-6">
-                <FileText className="text-[#1B4F72]" size={20} />
+            <div className="bg-white rounded-lg border border-gray-200 p-8">
+              <div className="w-14 h-14 rounded-full bg-[#1B4F72] flex items-center justify-center mb-4">
+                <FileText className="w-7 h-7 text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-[#1F2937] mb-3">
+              <h3 className="text-2xl font-semibold text-[#2C3E50] mb-3">
                 Legal Structure
               </h3>
-              <p className="text-gray-600 text-sm">
+              <p className="text-[#5D6D7E] leading-relaxed text-sm">
                 Properties are held in Special Purpose Vehicles (SPVs). Your
                 units represent shares in these legal entities.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
-              <div className="h-10 w-10 rounded-full bg-[#D1EAEF] flex items-center justify-center mb-6">
-                <Shield className="text-[#1B4F72]" size={20} />
+            <div className="bg-white rounded-lg border border-gray-200 p-8">
+              <div className="w-14 h-14 rounded-full bg-[#1B4F72] flex items-center justify-center mb-4">
+                <Shield className="w-7 h-7 text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-[#1F2937] mb-3">
+              <h3 className="text-2xl font-semibold text-[#2C3E50] mb-3">
                 Investor Rights
               </h3>
-              <p className="text-gray-600 text-sm">
+              <p className="text-[#5D6D7E] leading-relaxed text-sm">
                 Unit holders have proportional rights to rental income and
                 capital appreciation, without direct property management duties.
               </p>
@@ -78,7 +76,7 @@ export default function HowItWorks() {
 
         {/* SECTION 2: How Rental Income is Generated & Distributed */}
         <section className="space-y-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1F2937]">
+          <h2 className="text-3xl font-semibold text-[#2C3E50] mb-6">
             How Rental Income is Generated & Distributed
           </h2>
 
@@ -107,17 +105,12 @@ export default function HowItWorks() {
             ].map((step, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex items-start gap-6"
+                className="bg-white rounded-lg border border-gray-200 p-6"
               >
-                <span className="text-4xl font-light text-[#1B4F72] mt-1">
-                  {step.num}
-                </span>
-                <div>
-                  <h3 className="text-lg font-semibold text-[#1F2937] mb-2">
-                    {step.title}
-                  </h3>
-                  <p className="text-gray-600">{step.desc}</p>
-                </div>
+                <h3 className="text-xl font-semibold text-[#2C3E50] mb-2">
+                  {step.title}
+                </h3>
+                <p className="text-[#5D6D7E] leading-relaxed">{step.desc}</p>
               </div>
             ))}
           </div>
@@ -125,20 +118,19 @@ export default function HowItWorks() {
 
         {/* SECTION 3: How Capital Appreciation Works */}
         <section className="space-y-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1F2937]">
+          <h2 className="text-3xl font-semibold text-[#2C3E50] mb-6">
             How Capital Appreciation Works
           </h2>
 
-          <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8 flex items-start gap-4">
-            <TrendingUp
-              className="text-[#1B4F72] mt-1 flex-shrink-0"
-              size={24}
-            />
+          <div className="bg-white rounded-lg border border-gray-200 p-8 flex items-start gap-4">
+            <div className="w-14 h-14 rounded-full bg-[#1B4F72] flex items-center justify-center flex-shrink-0">
+              <TrendingUp className="w-7 h-7 text-white" />
+            </div>
             <div>
-              <h3 className="text-xl font-semibold text-[#1B4F72] mb-4">
+              <h3 className="text-xl font-semibold text-[#2C3E50] mb-4">
                 Property Value Growth
               </h3>
-              <div className="space-y-4 text-gray-600">
+              <div className="space-y-4 text-[#5D6D7E]">
                 <p>
                   Real estate values typically appreciate over time due to
                   market dynamics, location improvements, and inflation. When a
@@ -178,7 +170,7 @@ export default function HowItWorks() {
 
         {/* SECTION 4: How Exits Work */}
         <section className="space-y-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1F2937]">
+          <h2 className="text-3xl font-semibold text-[#2C3E50] mb-6">
             How Exits Work
           </h2>
 
@@ -233,7 +225,7 @@ export default function HowItWorks() {
 
         {/* SECTION 5: What Structura Manages vs. What Investors Do Not Manage */}
         <section className="space-y-12 pb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1F2937]">
+          <h2 className="text-3xl font-semibold text-[#2C3E50] mb-6">
             What Structura Manages vs. What Investors Do Not Manage
           </h2>
 
