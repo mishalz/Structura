@@ -1,5 +1,7 @@
 import React from "react";
 import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
+
 import {
   FileText,
   Shield,
@@ -13,15 +15,19 @@ import {
 
 export default function HowItWorks() {
   return (
-    <div className="min-h-screen bg-[#F8FAFC] py-20 px-4 sm:px-6 lg:px-8 font-sans">
+    <div className="min-h-screen bg-white">
       <Navigation />
 
-      <div className="max-w-5xl mx-auto space-y-24">
+      <div className="max-w-5xl mx-auto space-y-24 px-6 py-20">
         {/* SECTION 1: What Investors Actually Own */}
         <section className="space-y-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1F2937]">
+          <h1 className="text-5xl font-semibold text-[#2C3E50] mb-6 text-center">
+            How It Works{" "}
+          </h1>
+
+          <p className="text-lg text-[#5D6D7E] text-center mb-16 max-w-3xl mx-auto">
             What Investors Actually Own
-          </h2>
+          </p>
 
           <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
             <h3 className="text-xl font-semibold text-[#1B4F72] mb-4">
@@ -299,6 +305,7 @@ export default function HowItWorks() {
             </div>
           </div>
         </section>
+        <Footer />
       </div>
     </div>
   );
